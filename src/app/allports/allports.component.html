@@ -1,0 +1,18 @@
+<nav>
+  <!-- <a href="/registration">Rent the Port Slot</a> -->
+  
+ </nav>
+<table class="table">
+ <thead>
+   <tr align="Auto">
+     <th scope="col">SlotId</th>
+     <th scope="col">Available</th>
+    </tr>
+ </thead>
+ <tbody>
+   <tr *ngFor="let slot of ports">
+     <th scope="row">{{slot.slotId}}</th>
+     <td>{{slot.status}}</td>
+      </tr>
+       </tbody>
+</table>
